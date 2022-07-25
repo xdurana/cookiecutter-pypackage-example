@@ -1,0 +1,1 @@
+::: cookiecutter_pypackage_example

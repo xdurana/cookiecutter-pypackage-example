@@ -1,0 +1,30 @@
+site_name: cookiecutter-pypackage-example
+repo_url: https://github.com/xdurana/cookiecutter-pypackage-example
+site_url: https://xdurana.github.io/cookiecutter-pypackage-example
+site_description: This is a template repository for Python projects that use Poetry for their dependency management.
+site_author: Xavier Duran
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+            setup_commands:
+                - import sys
+                - sys.path.append('../')
+copyright: Maintained by Xavier Duran.
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    primary: white
+    accent: blue
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
